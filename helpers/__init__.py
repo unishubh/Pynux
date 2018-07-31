@@ -1,0 +1,1 @@
+from file_details_helper import FileDetailsHelper
