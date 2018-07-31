@@ -1,5 +1,8 @@
 import commands
 from utils import InputParser
+import logging
+
+log = logging.getLogger('terminal')
 
 
 class Terminal:
@@ -27,11 +30,15 @@ class Terminal:
         while True:
             try:
                 self.command = self.get_command()
+                log.info(self.command)
                 self.command, self.options = InputParser.parse_input(self.command)
+                print self.command, self.options
                 executer = getattr(commands, self.command)
-                executer().execute(self)
+                print executer
+
 
             except:
                 print "The command is either invalid or not supported yet"
+            executer().execute(self)
             self.set_last_command()
             self.push_to_history()
