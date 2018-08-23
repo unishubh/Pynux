@@ -6,7 +6,7 @@ class cd():
         pass
 
     def execute(self, cls):
-        data = cls.data
+        data = cls.data[0]
         if data:
             os.chdir(data)
         else:

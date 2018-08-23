@@ -33,11 +33,8 @@ class Terminal:
                 self.command = self.get_command()
                 log.info(self.command)
                 self.command, self.data, self.options = InputParser.parse_input(self.command)
-                print self.command
-                print self.data
-                print self.options
                 executer = getattr(commands, self.command)
-                print executer
+                
             except:
                 print ("The command is either invalid or not supported yet")
             executer().execute(self)
