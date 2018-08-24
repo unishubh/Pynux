@@ -11,6 +11,7 @@ class Terminal:
         self.history_stack = []
         self.last_command = None
         self.command = None
+        self.data = None
         self.options = []
 
     def set_last_command(self):
@@ -31,14 +32,11 @@ class Terminal:
             try:
                 self.command = self.get_command()
                 log.info(self.command)
-                self.command, self.options = InputParser.parse_input(self.command)
-                print self.command, self.options
+                self.command, self.data, self.options = InputParser.parse_input(self.command)
                 executer = getattr(commands, self.command)
-                print executer
-
-
+                
             except:
-                print "The command is either invalid or not supported yet"
+                print ("The command is either invalid or not supported yet")
             executer().execute(self)
             self.set_last_command()
             self.push_to_history()
