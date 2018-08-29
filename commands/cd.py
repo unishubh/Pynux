@@ -7,8 +7,12 @@ class cd():
 
     def execute(self, cls):
         data = cls.data[0]
-        if data:
-            os.chdir(data)
-        else:
-            print ("Please send in the correct path")
+
+        try:
+        	if data:
+	            os.chdir(data)
+	        else:
+	            print ("Please send in the correct path")
+        except:
+        	print ("Please send in the correct path")
 
