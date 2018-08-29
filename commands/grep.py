@@ -7,20 +7,6 @@ def coroutine(fn):
 		return c
 	return wrapper
 
-#
-# if __name__ == '__main__':
-#     import argparse
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument('-i', action='store_true',
-#                         dest='case_insensitive')
-#     parser.add_argument('pattern', type=str)
-#     parser.add_argument('infile', type=argparse.FileType('r'))
-#     args = parser.parse_args()
-#     cat(args.infile, args.case_insensitive,
-#         grep(args.pattern, args.case_insensitive,
-#              count(args.pattern)))
-
-
 class grep():
 	def __init__(self):
 		pass

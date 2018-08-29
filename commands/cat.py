@@ -3,7 +3,6 @@ class cat():
 		pass
 
 	def execute(self, cls):
-		print(cls.options, cls.data)
 		fileCat = cls.data[0]
 		try:
 			f = open(fileCat, 'r')
