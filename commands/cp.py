@@ -1,5 +1,6 @@
 import shutil
 
+
 class cp():
     def __init__(self):
         pass
@@ -12,4 +13,3 @@ class cp():
         except:
             print "Invalid syntax of cp command"
         shutil.copy(src, destination)
-        

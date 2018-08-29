@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="432dd80b-9081-43ab-8c4b-9a24968c7158" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/commands/cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands/cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/clear.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands/clear.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/cp.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands/cp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/grep.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands/grep.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="grep.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="grep.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commands/grep.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="450">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -52,8 +54,26 @@
       <file leaf-file-name="cat.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commands/cat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state relative-caret-position="285">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commands/cp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clear.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commands/clear.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -79,6 +99,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\t</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -94,8 +122,10 @@
         <option value="$PROJECT_DIR$/commands/ls.py" />
         <option value="$PROJECT_DIR$/terminal.py" />
         <option value="$PROJECT_DIR$/commands/__init__.py" />
-        <option value="$PROJECT_DIR$/commands/cat.py" />
         <option value="$PROJECT_DIR$/commands/grep.py" />
+        <option value="$PROJECT_DIR$/commands/cat.py" />
+        <option value="$PROJECT_DIR$/commands/cp.py" />
+        <option value="$PROJECT_DIR$/commands/clear.py" />
       </list>
     </option>
   </component>
@@ -228,8 +258,8 @@
       <window_info anchor="bottom" id="Run" order="9" weight="0.5406912" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Python Console" order="4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.38617885" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26323318" />
+      <window_info anchor="bottom" id="Terminal" order="5" visible="true" weight="0.38617885" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26323318" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="SciView" order="0" />
@@ -399,17 +429,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands/cat.py">
+    <entry file="file://$PROJECT_DIR$/commands/grep.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="450">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands/grep.py">
+    <entry file="file://$PROJECT_DIR$/commands/cat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/cp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/clear.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
