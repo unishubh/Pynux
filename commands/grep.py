@@ -1,8 +1,8 @@
 def coroutine(fn):
     def wrapper(*args, **kwargs):
-        c = fn(*args, **kwargs)
-        next(c)
-        return c
+        child = fn(*args, **kwargs)
+        next(child)
+        return child
     return wrapper
 
 class grep():

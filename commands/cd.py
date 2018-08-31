@@ -9,10 +9,7 @@ class cd():
         data = cls.data[0]
 
         try:
-        	if data:
-	            os.chdir(data)
-	        else:
-	            print ("Please send in the correct path")
+            os.chdir(data)
         except:
         	print ("Please send in the correct path")
 
