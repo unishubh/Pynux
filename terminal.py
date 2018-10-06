@@ -1,6 +1,7 @@
 import commands
 from utils import InputParser
 import logging
+import os
 
 log = logging.getLogger('terminal')
 
@@ -24,7 +25,14 @@ class Terminal:
         return self.last_command
 
     def get_command(self):
-        command = raw_input()
+        show_path = os.getcwd()
+        if os.name == 'nt':
+            show_path = show_path.split('\\')
+        else:
+            show_path = show_path.split('/')
+        show_path = show_path[-2:]
+        show_path = "/".join(show_path)
+        command = raw_input(show_path+'$ ')
         return command
 
     def play(self):
