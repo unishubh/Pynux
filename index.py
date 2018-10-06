@@ -1,5 +1,5 @@
 from terminal import Terminal
-
+import readline
 
 def get_command():
     command = raw_input()
