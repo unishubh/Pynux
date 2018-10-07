@@ -16,4 +16,4 @@ class InputParser():
                     data.append(option)
         else:
             main_command = command
-        return main_command, data, split_commands
+        return main_command, data, options
