@@ -20,7 +20,7 @@ def get_command():
 
 
 if __name__ == "__main__":
-    print "Welcome to pylinux"
+    print("Welcome to pylinux")
 
     readline.set_completer(completer)
     readline.parse_and_bind("tab: complete")

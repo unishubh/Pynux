@@ -32,7 +32,7 @@ class Terminal:
             show_path = show_path.split('/')
         show_path = show_path[-2:]
         show_path = "/".join(show_path)
-        command = raw_input(show_path+'$ ')
+        command = raw_input('{}$ '.format(show_path))
         return command
 
     def play(self):
@@ -42,9 +42,14 @@ class Terminal:
                 log.info(self.command)
                 self.command, self.data, self.options = InputParser.parse_input(self.command)
                 executer = getattr(commands, self.command)
-                
+            except KeyboardInterrupt:
+                print("Ctrl+C")
+                executer = getattr(commands, 'exit')
+            except EOFError:
+                print("Ctrl+D")
+                executer = getattr(commands, 'exit')
             except:
-                print ("The command is either invalid or not supported yet")
+                print("The command is either invalid or not supported yet")
             executer().execute(self)
             self.set_last_command()
             self.push_to_history()

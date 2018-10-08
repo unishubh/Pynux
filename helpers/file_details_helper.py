@@ -12,9 +12,8 @@ class FileDetailsHelper():
         try:
             files = os.listdir(path)
         except:
-            print "Invalid path"
-            return
-
+            print("Invalid path")
+            return False
         return files
 
     @staticmethod
