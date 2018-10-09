@@ -51,6 +51,7 @@ class Terminal:
                 print("Ctrl+D")
                 executer = getattr(commands, 'exit')
             except:
+                executer = getattr(commands, 'true')
                 print("The command is either invalid or not supported yet")
             executer().execute(self)
             self.set_last_command()
