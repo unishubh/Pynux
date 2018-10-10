@@ -8,3 +8,4 @@ from cat import cat
 from clear import clear
 from grep import grep
 from mkdir import mkdir
+from true import true
