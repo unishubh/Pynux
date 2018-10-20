@@ -7,4 +7,6 @@ from cp import cp
 from cat import cat
 from clear import clear
 from grep import grep
+from mv import mv
 from mkdir import mkdir
+
