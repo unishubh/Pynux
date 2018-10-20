@@ -33,6 +33,8 @@ class Terminal:
         show_path = show_path[-2:]
         show_path = "/".join(show_path)
         command = raw_input('{}$ '.format(show_path))
+        if command == '':
+            return 'true'
         return command
 
     def play(self):

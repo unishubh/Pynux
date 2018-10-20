@@ -9,4 +9,5 @@ from clear import clear
 from grep import grep
 from mv import mv
 from mkdir import mkdir
+from true import true
 
