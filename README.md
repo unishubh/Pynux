@@ -9,4 +9,6 @@ cd
 exit
 cp
 cat
+clear
+grep
 
