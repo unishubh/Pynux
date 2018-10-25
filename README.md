@@ -6,4 +6,7 @@ history
 ls
 pwd
 cd
+exit
+cp
+cat
 
